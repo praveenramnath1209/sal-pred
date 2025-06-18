@@ -32,7 +32,7 @@ else:
 YR = st.slider("Select Years of Experience",max_value=30,min_value=0,step=1)
 
 if st.button('Predict'):
-  data = np.array(['AGE','GENDER','ED','YR'])
+  data = np.array([['AGE','GENDER','ED','YR']])
   prediction = model.predict(data)
   st.success(f'Predicted Salary: {prediction}')
 
